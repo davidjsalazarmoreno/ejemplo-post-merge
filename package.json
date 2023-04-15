@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "post-merge": "./.githooks/post-merge"
+      "post-merge": "sh .githooks/post-merge"
     }
   }
 }
