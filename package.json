@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "post-merge": "echo 'Merge exitoso. Actualizando dependencias...'; npm install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "post-merge": "if [ $GIT_MERGE_HEAD = 'main' ]; then npm run post-merge; fi"
+      "post-merge": "./.githooks/post-merge"
     }
   }
 }
