@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "post-merge": "sh .githooks/post-merge"
+      "post-merge": "sh .husky/post-merge"
     }
   }
 }
