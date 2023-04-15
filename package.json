@@ -1,0 +1,23 @@
+{
+  "name": "ejemplo-post-merge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post-merge": "echo 'Merge exitoso. Actualizando dependencias...'; npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "if [ $GIT_MERGE_HEAD = 'main' ]; then npm run post-merge; fi"
+    }
+  }
+}
