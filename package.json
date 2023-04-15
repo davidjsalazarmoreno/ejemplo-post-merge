@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.3.2"
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "husky": "^8.0.3"
